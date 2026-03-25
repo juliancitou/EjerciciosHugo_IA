@@ -11,7 +11,7 @@ Ejercicios y prácticas de la materia de **Inteligencia Artificial**.
 Abre una terminal y ejecuta:
 
 ```bash
-git clone <URL-del-repositorio>
+git clone https://github.com/juliancitou/EjerciciosHugo_IA.git
 cd EjerciciosHugo_IA
 ```
 
