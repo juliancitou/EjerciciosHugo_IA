@@ -1,0 +1,55 @@
+# ══════════════════════════════════════════════════════
+#  .gitignore — EjerciciosHugo_IA
+# ══════════════════════════════════════════════════════
+
+# ── Entorno virtual ────────────────────────────────────
+# El entorno NO se sube; usa setup_env.bat para recrearlo
+.env_IA/
+.venv/
+venv/
+env/
+
+# ── Python ────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# ── Jupyter ───────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# ── VS Code ───────────────────────────────────────────
+.vscode/settings.json
+.vscode/launch.json
+
+# ── Archivos temporales de Office ─────────────────────
+~$*.docx
+~$*.xlsx
+~$*.pptx
+*.tmp
+
+# ── Sistema operativo ─────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Archivos generados por los notebooks ──────────────
+anomalias.csv
+atributosSinRelacion.csv
+Walmart_Sales_limpio.csv
+histogramas_boxplots.png
+dispersion_variables.png
+mapa_correlacion.png
+
+# ══════════════════════════════════════════════════════
+#  LO QUE SÍ SE SUBE AL REPO (no ignorado):
+#   ✅ requirements_IA.txt
+#   ✅ setup_env.bat
+#   ✅ todos los .ipynb
+#   ✅ todos los .csv de datos originales (ej. Walmart_Sales.csv)
+#   ✅ todos los .docx
+# ══════════════════════════════════════════════════════
