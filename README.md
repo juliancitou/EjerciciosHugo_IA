@@ -11,7 +11,7 @@ Ejercicios y prácticas de la materia de **Inteligencia Artificial**.
 Abre una terminal y ejecuta:
 
 ```bash
-git clone https://github.com/juliancitou/EjerciciosHugo_IA.git
+git clone <URL-del-repositorio>
 cd EjerciciosHugo_IA
 ```
 
@@ -73,9 +73,9 @@ EjerciciosHugo_IA/
 │   │   ├── Walmart_Sales_IA.ipynb
 │   │   └── Walmart_Sales.csv
 │   └── practica_no3/
-├── requirements_IA.txt   ← librerías del proyecto
-├── ejecucion_linux.sh          ← script de instalación (Linux)
-├── ejecucion_windows.bat         ← script de instalación (Windows)
+├── requirements_IA.txt        ← librerías del proyecto
+├── ejecucion_linux.sh         ← script de instalación (Linux)
+├── ejecucion_windows.bat      ← script de instalación (Windows)
 └── .gitignore
 ```
 
@@ -95,11 +95,12 @@ EjerciciosHugo_IA/
 **Linux: `python3-venv` no encontrado**
 → Instálalo con:
 ```bash
-sudo apt install python3-venv
+sudo apt install python3-venv -y
 ```
+Luego vuelve a correr `./ejecucion_linux.sh`.
 
 **Windows: el `.bat` no hace nada al doble clic**
-→ Ábrelo desde la terminal con `.\setup_env.bat` para ver los errores.
+→ Ábrelo desde la terminal con `.\ejecucion_windows.bat` para ver los errores.
 
 **El script da error de Python no encontrado**
 → Asegúrate de tener **Python 3.10 o superior** instalado.
