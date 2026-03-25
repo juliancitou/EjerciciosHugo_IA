@@ -17,14 +17,35 @@ cd EjerciciosHugo_IA
 
 ### 2. Crea el entorno virtual
 
-Haz doble clic en el archivo **`setup_env.bat`** que está en la raíz del proyecto.
+Ejecuta el script según tu sistema operativo. Esto solo lo necesitas hacer **una vez por computadora**.
 
-Ese script hace todo automáticamente:
+#### 🐧 Linux / Ubuntu
+
+Abre una terminal en la raíz del proyecto y ejecuta:
+
+```bash
+chmod +x ejecucion_linux.sh
+./ejecucion_linux.sh
+```
+
+> `chmod +x` le da permiso de ejecución al script. Solo es necesario la primera vez.
+
+#### 🪟 Windows
+
+Abre una terminal (CMD o PowerShell) en la raíz del proyecto y ejecuta:
+
+```cmd
+.\ejecucion_windows.bat
+```
+
+> Si prefieres, también puedes hacer doble clic sobre `ejecucion_windows.bat` desde el explorador de archivos.
+
+---
+
+El script hace todo automáticamente:
 - Crea el entorno `.env_IA`
 - Instala las librerías necesarias
 - Registra el kernel en Jupyter
-
-> Solo necesitas hacerlo **una vez** por computadora.
 
 ### 3. Abre VS Code
 
@@ -53,7 +74,8 @@ EjerciciosHugo_IA/
 │   │   └── Walmart_Sales.csv
 │   └── practica_no3/
 ├── requirements_IA.txt   ← librerías del proyecto
-├── setup_env.bat         ← script de instalación
+├── ejecucion_linux.sh          ← script de instalación (Linux)
+├── ejecucion_windows.bat         ← script de instalación (Windows)
 └── .gitignore
 ```
 
@@ -70,6 +92,15 @@ EjerciciosHugo_IA/
 **"No se puede resolver la importación pandas"**
 → Verifica que el kernel seleccionado sea `Python (env_IA)` y no el Python del sistema.
 
-**El script `setup_env.bat` da error**
-→ Asegúrate de tener **Python 3.10 o superior** instalado y agregado al PATH.
-Puedes verificarlo abriendo una terminal y escribiendo `python --version`.
+**Linux: `python3-venv` no encontrado**
+→ Instálalo con:
+```bash
+sudo apt install python3-venv
+```
+
+**Windows: el `.bat` no hace nada al doble clic**
+→ Ábrelo desde la terminal con `.\setup_env.bat` para ver los errores.
+
+**El script da error de Python no encontrado**
+→ Asegúrate de tener **Python 3.10 o superior** instalado.
+Puedes verificarlo con `python3 --version` (Linux) o `python --version` (Windows).
